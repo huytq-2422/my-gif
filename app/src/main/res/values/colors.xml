@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#6002ee</color>
+    <color name="color_primary_dark">#3700B3</color>
+    <color name="color_accent">#03D3C5</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_alpha_50">#80FFFFFF</color>
+    <color name="color_white_alpha_20">#33FFFFFF</color>
+    <color name="color_yellow">#FFFF00</color>
+    <color name="color_fuchsia">#FF00FF</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_silver">#C0C0C0</color>
+    <color name="color_gray">#808080</color>
+    <color name="color_gray_50">#80808080</color>
+    <color name="color_gray_75">#BF808080</color>
+    <color name="color_olive">#808000</color>
+    <color name="color_purple">#800080</color>
+    <color name="color_maroon">#800000</color>
+    <color name="color_aqua">#00FFFF</color>
+    <color name="color_aqua_alpha_50">#8000FFFF</color>
+    <color name="color_lime">#00FF00</color>
+    <color name="color_teal">#008080</color>
+    <color name="color_green">#008000</color>
+    <color name="color_blue">#0000FF</color>
+    <color name="color_navy">#000080</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black_alpha_50">#80000000</color>
+    <color name="color_black_alpha_70">#B3000000</color>
+    <color name="color_black_alpha_80">#CC000000</color>
+</resources>

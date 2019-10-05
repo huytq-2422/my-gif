@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActionBarDefault"
+    android:paddingTop="@dimen/dp_8"
+    android:paddingBottom="@dimen/dp_8"
+    tools:context=".ui.home.ActionBarFragment">
+
+    <ImageView
+        android:id="@+id/searchActionBar"
+        style="@style/IconSmall"
+        android:contentDescription="@string/description_icon_search_action_bar"
+        android:src="@drawable/ic_search_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconActionBar"
+        style="@style/IconSmall"
+        android:contentDescription="@string/description_icon_action_bar"
+        android:src="@drawable/ic_home_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchActionBar" />
+
+    <TextView
+        android:id="@+id/titleActionBar"
+        style="@style/TextCapsBoldLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_default"
+        android:textColor="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="@+id/searchActionBar"
+        app:layout_constraintEnd_toStartOf="@+id/searchActionBar"
+        app:layout_constraintStart_toEndOf="@+id/iconActionBar"
+        app:layout_constraintTop_toTopOf="@+id/searchActionBar" />
+</android.support.constraint.ConstraintLayout>

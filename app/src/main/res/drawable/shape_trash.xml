@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="1dp"
+    android:paddingTop="1dp"
+    android:paddingEnd="1dp"
+    android:paddingBottom="1dp">
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="0.5dp"
+                android:color="#FF00" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_trash_close" />
+</layer-list>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:clickable="true"
+    android:elevation="@dimen/dp_16"
+    tools:context=".ui.detail.DetailFragment"
+    tools:targetApi="lollipop">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        style="@style/ActionBarDefault"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backDetail"
+            style="@style/IconSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGifDetail"
+            style="@style/TextCapsBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:text="@string/title_default"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="@+id/backDetail"
+            app:layout_constraintEnd_toStartOf="@+id/buttonTabChange"
+            app:layout_constraintStart_toEndOf="@+id/backDetail"
+            app:layout_constraintTop_toTopOf="@+id/backDetail" />
+
+        <ImageView
+            android:id="@+id/buttonTabChange"
+            style="@style/IconSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:src="@drawable/ic_menu_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/backDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/backDetail" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_black_alpha_50"
+        app:layout_constraintBottom_toTopOf="@+id/detailProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageFacebook"
+                style="@style/IconMedium"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_32"
+                android:src="@drawable/ic_facebook_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageMessenger"
+                app:layout_constraintStart_toEndOf="@+id/imageCopy"
+                app:layout_constraintTop_toBottomOf="@+id/titleSource" />
+
+            <ImageView
+                android:id="@+id/imageMessenger"
+                style="@style/IconMedium"
+                android:src="@drawable/ic_messenger_logo"
+                app:layout_constraintBottom_toBottomOf="@+id/imageFacebook"
+                app:layout_constraintEnd_toStartOf="@+id/gifHead"
+                app:layout_constraintStart_toEndOf="@+id/imageFacebook"
+                app:layout_constraintTop_toTopOf="@+id/imageFacebook" />
+
+            <ImageView
+                android:id="@+id/imageCopy"
+                style="@style/IconMedium"
+                android:src="@drawable/ic_content_copy_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageFacebook"
+                app:layout_constraintEnd_toStartOf="@+id/imageFacebook"
+                app:layout_constraintStart_toEndOf="@+id/imageLike"
+                app:layout_constraintTop_toTopOf="@+id/imageFacebook" />
+
+            <ImageView
+                android:id="@+id/imageLike"
+                style="@style/IconMedium"
+                android:src="@drawable/ic_like_border_black"
+                app:layout_constraintBottom_toBottomOf="@+id/imageFacebook"
+                app:layout_constraintEnd_toStartOf="@+id/imageCopy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageFacebook" />
+
+            <com.sun.mygif.widget.GifView
+                android:id="@+id/gifViewDetail"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="@dimen/dp_200"
+                android:layout_margin="@dimen/dp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSource"
+                style="@style/TextCapsNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/title_source"
+                android:textColor="@color/color_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gifViewDetail" />
+
+            <TextView
+                android:id="@+id/titleSource"
+                style="@style/TextCapsNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_source_giphy"
+                android:textColor="@color/color_white"
+                app:layout_constraintBottom_toBottomOf="@+id/textSource"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textSource"
+                app:layout_constraintTop_toTopOf="@+id/textSource" />
+
+            <ImageView
+                android:id="@+id/gifHead"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/ic_application"
+                app:layout_constraintBottom_toBottomOf="@+id/imageLike"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageMessenger"
+                app:layout_constraintTop_toTopOf="@+id/imageLike" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/detailProgressBar"
+        style="@style/ProgressBarColorful"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textRelated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textRelated"
+        style="@style/TextCapsNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        android:drawableEnd="@drawable/ic_arrow_drop_up_black_24dp"
+        android:drawablePadding="@dimen/dp_16"
+        android:drawableTint="@color/color_white"
+        android:paddingStart="@dimen/dp_8"
+        android:text="@string/title_related"
+        android:textColor="@color/color_white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerRelatedGifs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerRelatedGifs"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_150"
+        android:background="@color/color_white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

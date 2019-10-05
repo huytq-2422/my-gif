@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="ThemeTransparent" parent="Theme.AppCompat.NoActionBar" >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextDefaultStyle" parent="TextAppearance.AppCompat">
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:color">@color/color_black</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="TextSingleLine" parent="TextDefaultStyle">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:state_selected">true</item>
+    </style>
+
+    <style name="TextCapsBold" parent="TextSingleLine">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCapsBoldMedium" parent="TextCapsBold">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="TextCapsBoldLarge" parent="TextCapsBold">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="TextCapsNormal" parent="TextSingleLine">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextCapsNormalMedium" parent="TextCapsNormal">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="TextStroke" parent="TextDefaultStyle">
+        <item name="android:shadowDx">10</item>
+        <item name="android:shadowDy">10</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="IconDefault">
+        <item name="android:alpha">1</item>
+        <item name="android:tint">@color/color_white</item>
+    </style>
+
+    <style name="IconSmall" parent="IconDefault">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/dp_8</item>
+    </style>
+
+    <style name="IconMedium" parent="IconDefault">
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_width">@dimen/dp_40</item>
+    </style>
+
+    <style name="ActionBarDefault">
+        <item name="android:background">@color/color_primary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ProgressBarColorful" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:background">@color/color_black</item>
+        <item name="android:indeterminateTint" tools:targetApi="lollipop">@color/color_white</item>
+    </style>
+
+    <style name="ContentDisplayBackground">
+        <item name="android:paddingStart">@dimen/dp_40</item>
+        <item name="android:paddingEnd">@dimen/dp_40</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SearchBox" parent="TextDefaultStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+</resources>

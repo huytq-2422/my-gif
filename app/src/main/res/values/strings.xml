@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MyGif</string>
+
+    <string name="title_default">Sun Asterisk</string>
+    <string name="title_home">Home</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_trending_topics">Trending Topics</string>
+    <string name="title_trending_gifs">Trending GIFs</string>
+    <string name="title_remove_from_favorites">Remove from favorites</string>
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+    <string name="title_source">source</string>
+    <string name="title_related">related</string>
+    <string name="title_app_closing_dialog">Exit the application</string>
+    <string name="title_warning">Warning</string>
+    <string name="title_source_giphy">GIPHY.COM</string>
+
+    <string name="notification_app_closing_dialog">Are you sure want to exit?</string>
+    <string name="message_warning_permission">Without permission you can not use this app. Do you want to grant permission?</string>
+    <string name="message_remove_from_favorites">Do you want to remove this item from your favorites?</string>
+    <string name="hint_search_box">Search something …</string>
+
+    <string name="description_icon_search_action_bar">icon search action bar</string>
+    <string name="description_icon_action_bar">icon action bar</string>
+    <string name="description_default">Sun * Inc. (formerly known as Framgia Inc.), founded in 2012, is a Creative Studio with more than 1300 members in 6 cities in 4 Asian countries at the moment.</string>
+
+    <string name="notification_no_results">We can not seem to find any gifs that match your search</string>
+    <string name="notification_no_favorites">It seems that you have not added something here. Let\'s enjoy ^^</string>
+    <string name="notification_start_searching">Let\'s search something…</string>
+    <string name="notification_delete_success">Delete favorite success</string>
+    <string name="notification_delete_failed">Delete favorite failed</string>
+    <string name="notification_facebook_sharing">Sharing to Facebook …</string>
+    <string name="notification_messenger_sharing">Sharing to Messenger …</string>
+    <string name="notification_text_copied_to_clipboard">Gif\'s url is copied to clipboard</string>
+    <string name="notification_add_favorite_success">This gif is added to favorite items</string>
+    <string name="notification_add_favorite_failed">This gif already has been added</string>
+
+    <string name="format_exception_io">Cannot create directory %s</string>
+    <string name="format_exception_io_http">HTTP error code: %s</string>
+    <string name="format_exception_runtime">%s must implement OnFragmentInteractionListener</string>
+    <string name="format_title_remove_favorite_item">Remove \'%s\'</string>
+
+    <string name="facebook_app_id">921165121558336</string>
+</resources>
